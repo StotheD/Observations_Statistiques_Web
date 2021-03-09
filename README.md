@@ -45,6 +45,7 @@ PouchDB accepte chaque nouvelles données sous forme de *document* unique, comme
  * et dont la valeur correspond à la valeur du champs du formulaire récupéré.
 
 Pour cela, créons un document sous forme de dictionnaire avec une première clé/valeur correspondant à l'id.
+
     var observations = {_id:id}
     jQuery.each(data, function(i, object){
       observations[object.name]=object.value;
