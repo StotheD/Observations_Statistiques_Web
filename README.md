@@ -66,7 +66,7 @@ Il nous reste qu'à envoyer ce document dans notre base locale :
 ## Traitement des données
 Il est ensuite possible en se connectant à la base CouchDB (via <ID_DU_RASPBERRY>:5984/_utils) afin de récupérer les données inscrites sous forme de JSON, un format pratique pour du traitement en python. L'interface de CouchDB permet de égalleemnt de voir les données individuellement sous forme de tableau.
 
-!(Screenshot CouchDB)[http://stats.realplaygame.ch/img/screen_CouchDB.png "Visualisation via CouchDB"]
+![Screenshot CouchDB](http://stats.realplaygame.ch/img/screen_CouchDB.png "Visualisation via CouchDB")
 
 ## TODO
  * Passer CouchDB en SSL via un certificat *Let's encrypt* ce qui permetrait de passer le formulaire en SSL également.
