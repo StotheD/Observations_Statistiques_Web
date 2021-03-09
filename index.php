@@ -46,7 +46,7 @@
                         <option value="pet">PET</option>
                         <option value="alu">Alu</option>
                         <option value="robinet">Robinet</option>
-                        <option value="aute">Autre</option>
+                        <option value="autre">Autre</option>
                       </select>
                     </div>
                   </div>
