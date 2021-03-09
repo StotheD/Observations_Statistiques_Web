@@ -30,11 +30,13 @@ Afin de prévenir tout problèmes de droits, il faut créer une base local qui s
 
 ## Récupération des données
 Une fois le formulaire créé **avec des nom sur chaque champs**, il est possible de récupérer les données en ajax via Jquery, sous forme de tableau :
+
     $("#DrinkForm").submit(function(e){
       var data = $(this).serializeArray();
     });
 
 Puis l'on crée un ID unique qui donnera une information sur la date et l'heure de l'observation :
+
     var id = new Date().toISOString();
     id = id.split(".")[0]
 
@@ -48,6 +50,7 @@ PouchDB accepte chaque nouvelles données sous forme de *document* unique, comme
     });
 
 Il nous reste qu'à envoyer ce document dans notre base locale :
+
     localDB.put(observations, function callback(err, result) {
       if (!err) {
         console.log('Successfully posted an observation!');
