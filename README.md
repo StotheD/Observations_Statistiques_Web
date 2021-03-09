@@ -15,9 +15,11 @@ Le projet utilise la librairie PouchDB afin d'établire une communication entre 
 ## Initialisation
 Pour la création de formulaire à l'aide de bootstrap, se référer à : https://getbootstrap.com/docs/4.3/components/forms/
 
-Les données sont ensuites traitées dans app.js
+Le contenu de *BD.css* permet de centrer horizontalement et verticalement le formulaire sur la page, de manière responsive.
 
-Afin de prévenir tout problèmes de droits, il faut créer une base local qui sera syncronisée avec la base distante :
+Les données sont ensuites traitées dans *app.js*.
+
+Afin de prévenir tout problèmes de droits durant la requête, il faut créer une base local qui sera syncronisée avec la base distante :
 
     var remoteDB = new PouchDB('<ID_DU_RASPBERRY>:5984/<NOM_DE_LA_BASE>');
     var localDB = new PouchDB('LocalDB');
@@ -35,7 +37,7 @@ Une fois le formulaire créé **avec des nom sur chaque champs**, il est possibl
       var data = $(this).serializeArray();
     });
 
-Puis l'on crée un ID unique qui donnera une information sur la date et l'heure de l'observation :
+Puis, toujours dnas la fonction *submit()*, l'on crée un ID unique qui donnera une information sur la date et l'heure de l'observation :
 
     var id = new Date().toISOString();
     id = id.split(".")[0]
